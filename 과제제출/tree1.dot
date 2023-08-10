@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="worst radius <= 16.795\nsamples = 569\nvalue = [212, 357]\nclass = benign", fillcolor="#afd7f4"] ;
+1 [label="worst concave points <= 0.136\nsamples = 379\nvalue = [33, 346]\nclass = benign", fillcolor="#4ca6e7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+3 [label="samples = 333\nvalue = [5, 328]\nclass = benign", fillcolor="#3c9ee5"] ;
+1 -> 3 ;
+4 [label="worst texture <= 25.67\nsamples = 46\nvalue = [28, 18]\nclass = malignant", fillcolor="#f6d2b8"] ;
+1 -> 4 ;
+5 [label="samples = 19\nvalue = [4, 15]\nclass = benign", fillcolor="#6eb7ec"] ;
+4 -> 5 ;
+6 [label="samples = 27\nvalue = [24, 3]\nclass = malignant", fillcolor="#e89152"] ;
+4 -> 6 ;
+2 [label="worst texture <= 19.91\nsamples = 190\nvalue = [179, 11]\nclass = malignant", fillcolor="#e78945"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="samples = 17\nvalue = [8, 9]\nclass = benign", fillcolor="#e9f4fc"] ;
+2 -> 7 ;
+8 [label="samples = 173\nvalue = [171, 2]\nclass = malignant", fillcolor="#e5823b"] ;
+2 -> 8 ;
+}
